@@ -14,7 +14,7 @@ body {
 
 .container {
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
   max-width: 1440px;
 }
 
@@ -155,6 +155,24 @@ header .logo {
   color: #fff;
   text-align: left;
   margin-right: 0.5em;
+}
+
+.testimonial-items {
+  margin-bottom: 2em;
+}
+
+.testimonial-item {
+  padding: 2em 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.testimonial-item img {
+  width: 100px;
+}
+
+.testimonial-item h3 {
+  margin: 1em 0;
 }
 
 @media (min-width: 410px) {
