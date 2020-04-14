@@ -92,13 +92,32 @@ header {
   padding: 2em 0;
 }
 
-.nav-items,
+header .nav-items,
 header .btn {
   display: none;
 }
 
 header .logo {
   margin-top: 10px;
+  min-width: 100px;
+}
+
+@media (min-width: 920px) {
+  header .nav-items,
+  header .btn {
+    display: block;
+  }
+  header .nav-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .nav-items li {
+    padding: 0 1em;
+  }
+  header .menu-btn {
+    display: none;
+  }
 }
 
 .hero .container {
@@ -159,6 +178,10 @@ header .logo {
   color: #fff;
   text-align: left;
   margin-right: 0.5em;
+}
+
+.testimonial-items {
+  margin-bottom: 2em;
 }
 
 .testimonial-item {
@@ -313,10 +336,4 @@ header .logo {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4;
-}
-
-@media (min-width: 410px) {
-  body {
-    display: none;
-  }
 }
