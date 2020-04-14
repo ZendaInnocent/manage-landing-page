@@ -120,6 +120,11 @@ header .logo {
   }
 }
 
+.hero {
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
 .hero .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,6 +142,7 @@ header .logo {
 }
 
 .hero-text {
+  padding-top: 2rem;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
@@ -144,6 +150,30 @@ header .logo {
 
 .hero-text p {
   margin-bottom: 3em;
+}
+
+@media (min-width: 520px) {
+  .hero .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hero-illustraton {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 45%;
+  }
+  .hero-text {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    width: 45%;
+  }
 }
 
 .difference {

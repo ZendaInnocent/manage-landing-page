@@ -128,6 +128,8 @@ header {
 
 // Hero section
 .hero {
+  padding: 0;
+  margin-bottom: 2rem;
 
   .container {
     display: flex;
@@ -139,10 +141,30 @@ header {
   }
 
   &-text {
+    padding-top: 2rem;
     order: 1;
     
     p {
       margin-bottom: 3em;
+    }
+  }
+}
+
+@media (min-width: 520px) {
+  .hero {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &-illustraton {
+      order: 1;
+      width: 45%;
+    }
+
+    &-text {
+      order: 0;
+      width: 45%;
     }
   }
 }
