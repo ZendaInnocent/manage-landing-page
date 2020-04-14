@@ -85,6 +85,7 @@ section {
 
 .section-title {
   font-size: 1.8rem;
+  margin-bottom: 1em;
 }
 
 header {
@@ -126,7 +127,37 @@ header .logo {
   margin-bottom: 3em;
 }
 
-@media (min-width: 375px) {
+.difference-intro {
+  margin-bottom: 2em;
+}
+
+.difference-item {
+  padding: 1em 0;
+  counter-increment: item;
+}
+
+.difference-item-title {
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 1em;
+  background-color: #ffefeb;
+  padding: 8px 0;
+  border-radius: 100px;
+  margin-right: -100px;
+}
+
+.difference-item-title::before {
+  content: "0" counter(item);
+  background-color: #f25f3a;
+  padding: 5px 20px;
+  border-radius: 100px;
+  font-size: 1rem;
+  color: #fff;
+  text-align: left;
+  margin-right: 0.5em;
+}
+
+@media (min-width: 410px) {
   body {
     display: none;
   }
