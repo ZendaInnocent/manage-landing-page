@@ -178,6 +178,24 @@ header .logo {
   }
 }
 
+// Call to action
+.call-to-action {
+  background-color: $bright-red;
+  color: #fff;
+  margin: 2em 0;
+
+  h2 {
+    margin-bottom: 2em;
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    background-color: #fff;
+    color: $bright-red;
+    margin-bottom: 3em;
+  }
+}
+
 // Media Queries
 @media (min-width: 410px) {
   body {

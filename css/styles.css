@@ -175,6 +175,23 @@ header .logo {
   margin: 1em 0;
 }
 
+.call-to-action {
+  background-color: #f25f3a;
+  color: #fff;
+  margin: 2em 0;
+}
+
+.call-to-action h2 {
+  margin-bottom: 2em;
+  font-size: 2.5rem;
+}
+
+.call-to-action .btn {
+  background-color: #fff;
+  color: #f25f3a;
+  margin-bottom: 3em;
+}
+
 @media (min-width: 410px) {
   body {
     display: none;
