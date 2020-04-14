@@ -196,7 +196,7 @@ header .logo {
   background-color: #ffefeb;
   padding: 8px 0;
   border-radius: 100px;
-  margin-right: -100px;
+  margin-right: -500px;
 }
 
 .difference-item-title::before {
@@ -208,6 +208,29 @@ header .logo {
   color: #fff;
   text-align: left;
   margin-right: 0.5em;
+}
+
+@media (min-width: 520px) {
+  .difference .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .difference-intro {
+    width: 45%;
+  }
+  .difference-items {
+    width: 45%;
+  }
+  .difference-item-title {
+    background-color: #fff;
+  }
+  .difference p {
+    text-align: left;
+  }
 }
 
 .testimonial-items {

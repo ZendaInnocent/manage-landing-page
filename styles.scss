@@ -172,6 +172,7 @@ header {
 // Differences section
 .difference {
   padding: 0;
+
   &-intro {
     margin-bottom: 2em;
   }
@@ -187,7 +188,7 @@ header {
       background-color: $very-pale-red;
       padding: 8px 0;
       border-radius: 100px;
-      margin-right: -100px;
+      margin-right: -500px;
 
       &::before {
         content: '0'counter(item);
@@ -199,6 +200,32 @@ header {
         text-align: left;
         margin-right: 0.5em;
       }
+    }
+  }
+}
+
+@media (min-width:520px) {
+  .difference {
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-intro {
+      width: 45%;
+    }
+
+    &-items {
+      width: 45%;
+    }
+
+    &-item-title {
+      background-color: #fff;
+    }
+    
+    p {
+      text-align: left;
     }
   }
 }
