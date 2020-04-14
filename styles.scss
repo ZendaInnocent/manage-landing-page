@@ -26,6 +26,12 @@ body {
   max-width: 1440px;
 }
 
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 img {
   width: 100%;
 }
@@ -59,6 +65,10 @@ p {
   }
 }
 
+ul {
+  list-style-type: none;
+}
+
 // Typography
 .hero-title,
 .section-title,
@@ -75,6 +85,21 @@ p {
   font-size: 1.8rem;
 }
 
+// Header section
+header {
+  padding: 2em 0;
+}
+
+.nav-items,
+header .btn {
+  display: none;
+}
+
+header .logo {
+  margin-top: 10px;
+}
+
+// Hero section
 
 // Media Queries
 @media (min-width: 375px) {
