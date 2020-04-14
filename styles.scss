@@ -296,6 +296,18 @@ header {
   }
 }
 
+@media (min-width:520px) {
+  .call-to-action .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+}
+
 // footer
 .footer {
   background-color: $very-dark-blue;
