@@ -233,14 +233,26 @@ header .logo {
   }
 }
 
+.testimonials h2 {
+  margin-bottom: 8rem;
+}
+
 .testimonial-items {
-  margin-bottom: 2em;
+  margin-bottom: 4rem;
 }
 
 .testimonial-item {
   padding: 2em 0;
   width: 80%;
   margin: 0 auto;
+  background-color: #fafafa;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.testimonial-item > * {
+  position: relative;
+  -webkit-transform: translateY(-90px);
+          transform: translateY(-90px);
 }
 
 .testimonial-item img {
@@ -250,6 +262,23 @@ header .logo {
 .testimonial-item h3 {
   margin: 1em 0;
   color: #242d52;
+}
+
+@media (min-width: 520px) {
+  .testimonial-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .testimonial-item {
+    width: 20%;
+  }
+  .testimonial-item p {
+    text-align: center;
+  }
 }
 
 .call-to-action {
