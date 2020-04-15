@@ -13,7 +13,7 @@
       <a href="#">
         <img class="logo" src="./images/logo.svg" alt="Manage Logo">
       </a>
-      <ul class="nav-items">
+      <ul class="nav-items show">
         <li><a href="">Pricing</a></li>
         <li><a href="">Product</a></li>
         <li><a href="">About Us</a></li>
@@ -197,6 +197,10 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', () => document.querySelector('nav ul').classList.toggle('show'));
+  </script>
 
 </body>
 </html>

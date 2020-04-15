@@ -102,6 +102,26 @@ header .logo {
   min-width: 100px;
 }
 
+header .show {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fafafa;
+  position: absolute;
+  margin-top: 1rem;
+  padding: 2rem 0;
+  top: 5rem;
+  width: 80%;
+  border-radius: 6px;
+}
+
+header .show li {
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
 @media (min-width: 920px) {
   header .nav-items,
   header .btn {
@@ -311,6 +331,7 @@ header .logo {
   }
   .call-to-action .container h2 {
     margin-bottom: 0;
+    width: 60%;
   }
 }
 

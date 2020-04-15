@@ -103,6 +103,23 @@ header {
     margin-top: 10px;
     min-width: 100px;
   }
+
+  .show {
+    display: block;
+    flex-direction: column;
+    background-color: #fafafa;
+    position: absolute;
+    margin-top: 1rem;
+    padding: 2rem 0;
+    top: 5rem;
+    width: 80%;
+    border-radius: 6px;
+  
+    li {
+        padding: 1rem 0;
+        font-weight: bold;
+    }
+  }
 }
 
 @media (min-width: 920px) {
@@ -304,6 +321,7 @@ header {
 
     h2 {
       margin-bottom: 0;
+      width: 60%;
     }
   }
 }
@@ -398,9 +416,4 @@ header {
   .copyrights {
     order: 4;
   }
-}
-
-// Media Queries
-@media (min-width: 410px) {
-  
 }
