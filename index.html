@@ -92,7 +92,7 @@
 
       </div>
     </div>
-    <!-- /Differences -->
+    <!-- / Differences -->
 
     <!-- Testimonials -->
     <section class="testimonials">
@@ -151,6 +151,7 @@
 
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-contents">
@@ -197,9 +198,14 @@
       </div>
     </div>
   </footer>
+  <!-- / Footer -->
 
   <script>
-    document.querySelector('.hamburger').addEventListener('click', () => document.querySelector('nav ul').classList.toggle('show'));
+    document.querySelector('.hamburger')
+      .addEventListener('click', () => {
+        document.querySelector('nav ul')
+          .classList.toggle('show');
+      });
   </script>
 
 </body>
